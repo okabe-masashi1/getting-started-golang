@@ -30,3 +30,11 @@ build:
         name: go test
         code: |
           go test ./...
+
+push:
+  box:
+    id: golang
+  steps:
+    - script:
+	name: hoge
+	code: echo "hogehoge" 
