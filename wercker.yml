@@ -33,8 +33,10 @@ build:
 
 push:
   box:
-    id: golang
+    id: golang:1.8.1-alpine
+    cmd: /bin/sh
   steps:
     - script:
-	name: hoge
-	code: echo "hogehoge" 
+        name: hoge
+        code: |
+          echo "hogehoge"
